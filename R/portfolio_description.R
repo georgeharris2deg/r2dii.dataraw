@@ -1,4 +1,4 @@
-#' Description of a generic equity or debt portfolio dataset
+#' Description of a generic equity or debt portfolio result dataset
 #'
 #' A equity or debt portfolio mapped to the physical assets of financial
 #' securities issuers. The PACTA methodology is applied to the mapped data to
