@@ -4,7 +4,7 @@
 \alias{portfolio_description}
 \alias{equity}
 \alias{debt}
-\title{Description of a generic equity or debt portfolio dataset}
+\title{Description of a generic equity or debt portfolio result dataset}
 \description{
 A equity or debt portfolio mapped to the physical assets of financial
 securities issuers. The PACTA methodology is applied to the mapped data to
@@ -15,6 +15,8 @@ associated with the portfolio's exposure to each technology in
 climate-relevant sectors.
 }
 \seealso{
+\link{portfolio_demo}
+
 Other generic datasets: 
 \code{\link{ald_description}},
 \code{\link{loanbook_description}}

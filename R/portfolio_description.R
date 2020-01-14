@@ -11,4 +11,5 @@
 #' @name portfolio_description
 #' @aliases equity debt
 #' @family generic datasets
+#' @seealso [portfolio_demo]
 NULL
