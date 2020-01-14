@@ -7,10 +7,11 @@ read_and_sanitize <- function(path, sheet) {
   out
 }
 
-path <- here::here("data-raw", "SampleSDA_data.xlsx")
-
+path <- here::here("data-raw", "market_portfolio.xlsx")
 portfolio <- read_and_sanitize(path, sheet = "Portfolio")
-usethis::use_data(portfolio, overwrite = TRUE)
+portfolio %>% readr::write_csv("data-raw/portfolio.csv")
+# usethis::use_data(portfolio, overwrite = TRUE)
 
 market <- read_and_sanitize(path, sheet = "Market")
-usethis::use_data(market, overwrite = TRUE)
+market %>% readr::write_csv("data-raw/market.csv")
+# usethis::use_data(market, overwrite = TRUE)
