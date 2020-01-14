@@ -41,24 +41,24 @@ test_that("data_dictionary defines all its names", {
 })
 
 test_that("data_dictionary has 9 rows where dataset is 'market'", {
- data_dictionary() %>%
+  data_dictionary() %>%
     filter(dataset == "market") %>%
     nrow() %>%
     expect_equal(9L)
 })
 
 test_that("data_dictionary for market has same columns as in market_demo", {
- actual <- data_dictionary() %>%
-   filter(dataset == "market") %>%
-   pull(column) %>%
-   sort()
+  actual <- data_dictionary() %>%
+    filter(dataset == "market") %>%
+    pull(column) %>%
+    sort()
 
- expected <- sort(names(market_demo))
- expect_equal(actual, expected)
+  expected <- sort(names(market_demo))
+  expect_equal(actual, expected)
 })
 
 test_that("data_dictionary has 9 rows where dataset is 'portfolio'", {
- data_dictionary() %>%
+  data_dictionary() %>%
     filter(dataset == "portfolio") %>%
     nrow() %>%
     expect_equal(9L)
