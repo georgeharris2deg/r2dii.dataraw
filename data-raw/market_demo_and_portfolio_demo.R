@@ -16,8 +16,8 @@ specs <- cols(
   Scen.Sec.EmissionsFactor = col_double()
 )
 
-portfolio <- read_csv(here("data-raw", "portfolio.csv"), col_types = specs)
-usethis::use_data(portfolio, overwrite = TRUE)
+portfolio_demo <- read_csv(here("data-raw", "portfolio.csv"), col_types = specs)
+usethis::use_data(portfolio_demo, overwrite = TRUE)
 
-market <- read_csv(here("data-raw", "market.csv"), col_types = specs)
-usethis::use_data(market, overwrite = TRUE)
+market_demo <- read_csv(here("data-raw", "market.csv"), col_types = specs)
+usethis::use_data(market_demo, overwrite = TRUE)
