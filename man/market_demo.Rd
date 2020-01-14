@@ -15,7 +15,7 @@ A market dataset for demonstration
 market_demo
 }
 \seealso{
-\link{data_dictionary} \link{market_description}.
+\link{data_dictionary}.
 
 Other demo datasets: 
 \code{\link{ald_demo}},
