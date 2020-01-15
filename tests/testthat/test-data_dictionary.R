@@ -1,3 +1,5 @@
+library(dplyr)
+
 test_that("data_dictionary defines the expected objects", {
   datasets <- data_dictionary() %>%
     dplyr::pull(dataset) %>%
